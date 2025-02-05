@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Airline Booking Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Vincent</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Main Page</a></li>
+							<li class="active"><a href="generic.html">Airline Booking Project</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/vincent-ang-977865281/" class="icon brands alt fa-linkedin" target="_blank"><span class="label">Linkedin</span></a></li>
+									<li><a href="https://github.com/Vincent-Ang523" class="icon brands alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Airline Booking Analysis<br />
+									with SQL</h1>
+									<p>Used SQL to compare booking behaviors of long haul and short haul passengers<br />
+										Dashboard can be found <a href = "https://public.tableau.com/views/Airline_Booking_Viz/BookingsDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target = "_blank">here</a>.
+									</p>
+								</header>
+								<div class="image main"><img src="images/Airport.jpg" alt="" /></div>
+								<p><h2>Objective</h2></p>
+								<p>A lot of in recent years have struggled to break into the long haul market. For example, Norwegian Air Shuttle nearly ceased operations
+									due to the failure of its long haul division despite success in the short haul market. This presents an opportunity to analyze how customer behavior differs between short haul and long haul flights.
+									This analysis aims to compare the booking behavior between short haul and long haul passengers and suggest possible strategies to optimize sales in both markets.</p>
+								
+								<p><h2>Data Source and Acknowledgment</h2></p>
+								<p>The data was processes with mySQL and visualizations were made with Tableau.</p>
+								<p>The analysis used the <a href = "https://www.kaggle.com/datasets/anandshaw2001/airlines-booking-csv" target = "_blank">Airlines_Booking.csv</a> dataset by <a href = "https://www.kaggle.com/anandshaw2001" target="_blank">Anand Shaw</a></p>
+								
+								<p><h2>Summary of Insights</h2></p>
+								<p><h3>Proportion of Long Haul Travellers</h3></p>
+								<img src = "images/Long Haul Proportion.PNG">
+								<p><h5 align = "right">Source: Airlines_Booking.csv</h5></p>
+								<p>Using the ICAO classification of long haul flights (flights at least 8 hours long), the dataset showed that short to medium haul flights make up the majority of bookings.</p>
+								</span>
+								
+								<p><h3>Departure Times</h3></p>
+								<img src = "images/Day of Week.PNG">
+								<img src = "images/Departure Time.PNG">
+								<img src = "images/Long Haul Legend.PNG">
+								<p><h5 align = "right">Source: Airlines_Booking.csv</h5></p>
+								<p>Key Findings:</p>
+								<p><ul>
+									<li>Both long and short haul passengers exhibit similar booking patterns when it comes to day of travel with the most common departure day being Monday and with decreasing number of bookings as the week progresses and an increase in bookings on Sunday.</li>
+									<li>For time of departure, some differences can be observed. From 12 pm to 2 pm, long haul bookings continuously declined from their peak at 11 am while short haul bookings increased to their peak at this time period.</li>
+									<li>Long haul bookings are at their lowest at 6 pm before bookings increased to 648 bookings by 11 pm, higher than short haul bookings at this time. Meanwhile, short haul bookings were lowest at 8 pm before rising to 338 bookings at 11 pm.</li>
+								</ul>
+								</p>
+								
+								<p><h3>Booking Details</h3></p>
+								<img src = "images/Extra Services.PNG">
+								<span class = "image fit">
+								<img src = "images/Number of Passengers.PNG">
+								</span>
+								<img src = "images/Trip Type.PNG">
+								<p><h5 align = "right">Source: Airlines_Booking.csv</h5></p>
+								<p><ul>
+									<li>For all 3 extra services, long haul passengers are more likely to purchase extra services.</li>
+									<li>The majority of bookings only consist of one passenger for both types of flight.</li>
+									<li>The majority of bookings are round trips for both flight type.</li>
+								</ul></p>
+								</span>
+								
+								<p><h3>Additional Booking Details</h3></p>
+								<img src = "images/Additional Details.PNG">
+								<p><h5 align = "right">Source: Airlines_Booking.csv</h5></p>
+								<p><ul>
+									<li>For both long and short haul flights, bookings increased continuously as the booking gets closer to departure time.</li>
+									<li>Most bookings list the length of stay at the destination of less than 30 days.</li>
+								</ul>
+								</p>
+							    <p><h2>Recommendations</h2></p>
+								<p>
+									Based on the analysis, here are some actions that could be taken to optimize sales:
+								<ol>
+									<li>More analysis can be done to determine the reason for the departure time trends. For example, bookings may be the highest on Monday due to either more demand or a lack of flights on other days of the week. This would help airlines make flight schedules where demand is highest. 
+									</li>
+									<li>
+										From the extra services section, more options for in-flight services such as allowing to book more bags can be added to accommodate long haul passenger demands.
+									</li>
+									<li>
+										Increase prices significantly when booking 50 days or closer to the departure time as the majority of passengers on both flight types make their bookings at this time period.
+									</li>
+									<li>
+										Since most passengers spend less than 30 days at the destination, this could suggest most passengers travel for holidays or temporary business trips. However, additional analysis can be conducted to determine the reason for travel.
+									</li>
+								</ol>
+								</p>
+								<p><h2>Future Works</h2></p>
+								<p><ol>
+									<li>Conduct more detailed analysis to explain the trend in departure time and dates in order to make sure airlines schedule fights at times with most demand.</li>
+									<li>Increase the amount of factors measured in the analysis as the original dataset did not record certain key attributes. Some key factors may include:
+										<ul>
+											<li>Price of Ticket</li>
+											<li>Purpose of Travel</li>
+											<li>Seat Type (Economy Class, Business Class, First Class)</li>
+											<li>Airline</li>
+										</ul>
+									</li>
+									<li>From observation of the dataset, the majority of the entries are flights in the Asia Pacific Region. More data can be collected in other regions such as Europe and North America to determine if there are any differences between region.</li>
+								</ol></p>
+							</section>
+					</div>
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>Jl. Pabrik Kimia No. 26<br />
+								Medan, North Sumatra, Indonesia</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p>+62 812-6218-9407<br />
+								+86 132-6572-8125</p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p>vincent.ang523@gmail.com</p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.linkedin.com/in/vincent-ang-977865281/" class="icon brands alt fa-linkedin" target="_blank"><span class="label">Linkedin</span></a></li>
+									<li><a href="https://github.com/Vincent-Ang523" class="icon brands alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
